@@ -19,6 +19,10 @@ int main() {
 	int h, c;
 	scanf("%d%d", &h, &c);
 	float *a = (float*)malloc(n*sizeof(float));
+	if (a == NULL) {
+        printf("Khong du bo nho!");
+        return 1;
+    }
 	Nhap(a, h, c);
 	In(a, h, c);
 	free(a);

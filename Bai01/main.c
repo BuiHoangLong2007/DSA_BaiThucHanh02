@@ -15,6 +15,10 @@ int main() {
 	int n;
 	scanf("%d", &n);
 	float *a = (float*)malloc(n*sizeof(float));
+	if (a == NULL) {
+        printf("Khong du bo nho!");
+        return 1;
+    }
 	Nhap(a, n);
 	In(a, n);
 	free(a);

@@ -22,7 +22,7 @@ void In(SV *a, int n) {
 
 int main() {
 	int n;
-	(scanf("%d", &n);
+	scanf("%d", &n);
 	SV *a = (SV*)malloc(n * sizeof(SV)); // Cap phat bo nho cho bien con tro a
 	Nhap(a, n);
 	In(a, n);
